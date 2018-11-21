@@ -23,5 +23,6 @@
 
   <!-- Move base -->
   <include file="$(find turtlebot_navigation)/launch/includes/move_base.launch.xml"/>
-
+  <node pkg="joy" name="joy_node" type="joy_node"/>
+  <include file="$(find turtlebot_teleop)/launch/ps3_teleop.launch"/>
 </launch>
